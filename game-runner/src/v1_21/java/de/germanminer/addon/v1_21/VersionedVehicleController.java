@@ -18,15 +18,15 @@ public class VersionedVehicleController extends VehicleController {
     vehicles.forEach(vehicle -> {
       final ClientLevel level = Minecraft.getInstance().level;
       if(level == null) return;
-      final Entity entity = level.getEntity(vehicle.getEntityId());
+      final Entity entity = level.getEntity(vehicle.entityId());
 
       if (entity == null) return;
       entity.moveTo(
-          vehicle.getX(),
-          vehicle.getY(),
-          vehicle.getZ(),
-          vehicle.getYaw(),
-          vehicle.getPitch()
+          vehicle.x(),
+          vehicle.y(),
+          vehicle.z(),
+          vehicle.yaw(),
+          vehicle.pitch()
       );
     });
   }
