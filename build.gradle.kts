@@ -16,7 +16,7 @@ labyMod {
         displayName = "GermanMinerAddon"
         author = "GermanMinerDE, Funboyy, JensausNGL"
         description = "Offizielles Addon zur Verbesserung von diversen Spielbereichen auf dem Real-Life-Server GermanMinerDE"
-        minecraftVersion = "1.12.2"
+        minecraftVersion = "1.21<1.21.3"
         version = rootProject.version.toString()
     }
 
